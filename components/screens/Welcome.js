@@ -5,11 +5,11 @@ import colors from '../config/colors';
 
 function Welcome(props) {
     const onPressLogin = () => {
-        alert("This function hasn't been built yet");
+        alert("Demo app only. Button functionality not supported.");
     }
 
     const onPressRegister = () => {
-        alert("This function hasn't been built yet");
+        alert("Demo app only. Button functionality not supported.");
     }
 
     return ( 
@@ -17,7 +17,7 @@ function Welcome(props) {
             <StatusBar hidden={true} /> 
             <View style={styles.logoContainer}>
                 <Image style={styles.logo} source={require('../assets/logo-red.png')}/>
-                <Text style={styles.headerText}>Shopping Made Fun</Text>
+                <Text style={styles.headerText}>Buy it. Use it. Sell it.</Text>
             </View>
             <TouchableHighlight onPress={onPressLogin} style={styles.loginButton} underlayColor='gray'>
                 <View>
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     headerText: {
         top: 45,
         fontSize: 25,
+        color: colors.secondary,
     },
 
     loginButton: {
